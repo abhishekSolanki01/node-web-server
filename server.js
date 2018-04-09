@@ -42,6 +42,12 @@
     });
   });
 
+  app.get('/projects',(req, res) => {
+    res.render('projects.hbs',{
+      pageTitle: 'projects'
+    });
+  });
+
   app.get('/', (req, res) => {
     res.render('home.hbs', {
       pageTitle: 'Home page',
